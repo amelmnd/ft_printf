@@ -6,7 +6,7 @@
 /*   By: amennad <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 12:09:44 by amennad           #+#    #+#             */
-/*   Updated: 2023/05/17 12:10:58 by amennad          ###   ########.fr       */
+/*   Updated: 2023/06/05 16:15:16 by amennad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,7 @@
 
 int	main(void)
 {
+	// printf("empty flag\n");
+	ft_printf("empty flag\n+\n");
 	return (0);
 }
