@@ -6,7 +6,7 @@
 /*   By: amennad <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 12:09:32 by amennad           #+#    #+#             */
-/*   Updated: 2023/06/06 15:47:05 by amennad          ###   ########.fr       */
+/*   Updated: 2023/06/06 16:03:43 by amennad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	print_line(char check_char, va_list	args)
 {
 	if (check_char == 'c')
 		ft_putchar_fd(va_arg(args, int), 1);
+	if (check_char == 's')
+		ft_putstr_fd(va_arg(args, char *), 1);
 }
 
 

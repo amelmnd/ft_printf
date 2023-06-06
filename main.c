@@ -6,7 +6,7 @@
 /*   By: amennad <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 12:09:44 by amennad           #+#    #+#             */
-/*   Updated: 2023/06/06 15:56:49 by amennad          ###   ########.fr       */
+/*   Updated: 2023/06/06 16:03:12 by amennad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,27 @@
 
 int	main(void)
 {
-
+	printf("-----------------------------------------------------\n");
+	printf("POURCENTAGE S\n");
+	printf("-----------------------------------------------------\n");
+	printf("----NO AFTER----\n");
+	printf("----CAS CARA ----\n");
+	printf("TRUE : %s\n", "titi");
+	ft_printf("MY : %s\n", "grominet");
+	printf("----CAS SPE CARA----\n");
+	printf("TRUE : %s\n", "titi & grominet");
+	ft_printf("MY : %s\n", "titi & grominet");
+	printf("----CAS INT => CHAR----\n");
+	printf("----WITH AFTER----\n");
+	printf("----CAS CARA ----\n");
+	printf("TRUE : %s = true\n", "titi & grominet");
+	ft_printf("MY : %s = mine\n", "titi & grominet");
+	printf("----CAS SPE CARA----\n");
+	printf("TRUE : %s  = true\n", "titi & grominet");
+	ft_printf("MY : %s = mine\n", "titi & grominet");
+	printf("----CAS EMPTY----\n");
+	printf("TRUE : %s  = true\n", "");
+	ft_printf("MY : %s = mine\n", "");
 	return (0);
 }
 
@@ -67,13 +87,13 @@ int	main(void)
 	ft_printf("MY : %c\n", 95);
 	printf("----WITH AFTER----\n");
 	printf("----CAS CARA ----\n");
-	printf("TRUE : %c true\n", 't');
-	ft_printf("MY : %c mine\n", 'm');
+	printf("TRUE : %c = true\n", 't');
+	ft_printf("MY : %c = mine\n", 'm');
 	printf("----CAS SPE CARA----\n");
-	printf("TRUE : %c  true\n", '&');
-	ft_printf("MY : %c mine\n", '&');
+	printf("TRUE : %c  = true\n", '&');
+	ft_printf("MY : %c = mine\n", '&');
 	printf("----CAS INT => CHAR----\n");
-	printf("TRUE : %c  true\n", 95);
-	ft_printf("MY : %c mine\n", 95);
+	printf("TRUE : %c  = true\n", 95);
+	ft_printf("MY : %c = mine\n", 95);
 
 */
