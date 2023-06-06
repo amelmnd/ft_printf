@@ -35,6 +35,9 @@
 *.i*86
 *.x86_64
 *.hex
+exec
+prog
+a.out
 
 # Debug files
 *.dSYM/
@@ -56,6 +59,4 @@ dkms.conf
 *.dSYM
 *.DS_Store
 .history
-exec
-a.out
 .vscode/
