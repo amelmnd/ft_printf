@@ -10,18 +10,18 @@ OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME):
-	$(CC) $(CFLAGS) -c $(SRC)
-	ar rc $(NAME) $(OBJ)
+	@$(CC) $(CFLAGS) -c $(SRC)
+	@ar rc $(NAME) $(OBJ)
 
 compil:
-	$(CC) $(CFLAGS) $(ORIGIN) $(SRC) -o $(EXEC)
-	./$(EXEC)
+	@$(CC) $(CFLAGS) $(ORIGIN) $(SRC) -o $(EXEC)
+	@./$(EXEC)
 
 clean:
-	rm -rf *.o
+	@rm -rf *.o
 
 fclean : clean
-	rm -rf $(NAME) $(EXEC)
+	@rm -rf $(NAME) $(EXEC)
 
 re: fclean all
 
