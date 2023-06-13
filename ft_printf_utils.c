@@ -6,7 +6,7 @@
 /*   By: amennad <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/09 15:02:11 by amennad           #+#    #+#             */
-/*   Updated: 2023/06/09 17:06:51 by amennad          ###   ########.fr       */
+/*   Updated: 2023/06/13 09:18:48 by amennad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,33 +42,22 @@ void	ft_putstr(char *s)
 	}
 }
 
-int	ft_putnbr(int n)
+void	ft_putnbr(int n)
 {
-	int	i;
-
-	i = 0;
-
 	if (n == -2147483648)
 		ft_putstr("-2147483648");
 	else if (n < 0)
 	{
 		ft_putchar('-');
 		ft_putnbr(-n);
-		// i++;
 	}
 	else if (n >= 10)
 	{
 		ft_putnbr(n / 10);
 		ft_putchar(n % 10 + '0');
-		// i++;
 	}
 	else
-	{
 		ft_putchar(n + '0');
-		// i++;
-	}
-	i++;
-	return (i);
 }
 
 int	ft_unsigned_putnbr(int n)
