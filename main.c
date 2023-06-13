@@ -6,7 +6,7 @@
 /*   By: amennad <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 12:09:44 by amennad           #+#    #+#             */
-/*   Updated: 2023/06/09 17:04:07 by amennad          ###   ########.fr       */
+/*   Updated: 2023/06/13 15:55:15 by amennad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,49 +18,36 @@
 #include <stdlib.h>
 #include <string.h>
 
-void	test_i(int i)
-{
-	printf("TRUE : %i\n", i);
-	ft_printf("MY : %i\n", i);
-}
 
-void	test_u(int u)
+void	test(int i)
 {
-	printf("TRUE : %u\n", u);
-	ft_printf("MY : %u\n", u);
+	printf("TRUE : %X\n", i);
+	ft_printf("MY : %X\n", i);
 }
 
 int	main(void)
 {
-	// ft_printf("1. %d \n", 0);
-	// ft_printf("2. %d \n", -1);
-	// ft_printf("3. %d \n", 1);
-	// ft_printf("4. %d \n", 9);
-	// ft_printf(" %d \n", 10);
-	// ft_printf(" %d \n", 11);
-	// ft_printf(" %d \n", 15);
-	// ft_printf(" %d \n", 16);
-	// ft_printf(" %d \n", 17);
-	// ft_printf(" %d \n", 99);
-	ft_printf(" %d \n", 100);
-	ft_printf(" %d \n", 101);
-	// ft_printf(" %d \n", -9);
-	ft_printf(" %d \n", -10);
-	ft_printf(" %d \n", -11);
-	ft_printf(" %d \n", -14);
-	ft_printf(" %d \n", -15);
-	ft_printf(" %d \n", -16);
-	ft_printf(" %d \n", -99);
-	ft_printf(" %d \n", -100);
-	ft_printf(" %d \n", -101);
-	// ft_printf(" %d \n", INT_MAX);
-	// ft_printf(" %d \n", INT_MIN);
-	// ft_printf(" %d \n", LONG_MAX);
-	// ft_printf(" %d \n", LONG_MIN);
-	// ft_printf(" %d \n", UINT_MAX);
-	// ft_printf(" %d \n", ULONG_MAX);
-	ft_printf(" %d \n", 9223372036854775807LL);
-	// ft_printf(" %d %d %d %d %d %d %d\n", INT_MAX, INT_MIN, LONG_MAX, LONG_MIN, ULONG_MAX, 0, -42);
+	test(0);
+	test(1);
+	test(10);
+	test(11);
+	test(15);
+	test(16);
+	test(17);
+	test(99);
+	test(100);
+	test(101);
+	test(-1);
+	test(-10);
+	test(-11);
+	test(-15);
+	test(-16);
+	test(-17);
+	test(-99);
+	test(-100);
+	test(-101);
+	test(42);
+	test(-42);
 	return (0);
 }
 //LES DIFFERENTS TESTS REALISES
