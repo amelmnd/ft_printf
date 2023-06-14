@@ -5,84 +5,62 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amennad <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/09 15:02:11 by amennad           #+#    #+#             */
-/*   Updated: 2023/06/13 13:40:22 by amennad          ###   ########.fr       */
+/*   Created: 2023/06/14 10:04:13 by amennad           #+#    #+#             */
+/*   Updated: 2023/06/14 10:45:19 by amennad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <unistd.h>
 
-size_t	ft_strlen(const char *str)
+void	check_c(char c, int *len)
 {
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+	ft_putchar(c);
+	*len += 1;
 }
 
-void	ft_putchar(char c)
+void	check_s(char *element, int *len)
 {
-	write(1, &c, 1);
-}
-
-void	ft_putstr(char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
+	if (!element)
 	{
-		write(1, &s[i], 1);
-		i++;
-	}
-}
-
-void	ft_putnbr(int n)
-{
-	if (n == -2147483648)
-		ft_putstr("-2147483648");
-	else if (n < 0)
-	{
-		ft_putchar('-');
-		ft_putnbr(-n);
-	}
-	else if (n >= 10)
-	{
-		ft_putnbr(n / 10);
-		ft_putchar(n % 10 + '0');
-	}
-	else
-		ft_putchar(n + '0');
-}
-
-int	ft_unsigned_putnbr(int n)
-{
-	int	i;
-
-	i = 0;
-	if (n == -2147483648)
-		ft_putstr("-2147483648");
-	else if (n < 0)
-	{
-		ft_putchar('-');
-		ft_putnbr(-n);
-		i++;
-	}
-	else if (n >= 10)
-	{
-		ft_putnbr(n / 10);
-		ft_putchar(n % 10 + '0');
-		i++;
+		ft_putstr("(null)");
+		*len += ft_strlen("(null)");
 	}
 	else
 	{
-		ft_putchar(n + '0');
-		i++;
+		*len += ft_strlen(element);
+		ft_putstr(element);
 	}
-	return (i);
+}
+
+void	temp_str(char *fn, int *len)
+{
+	char	*str;
+
+	str = fn;
+	*len += ft_strlen(str);
+	ft_putstr(str);
+	free(str);
+}
+
+void	convert_base_x(unsigned int n, char *base, int *len)
+{
+	unsigned int	len_base;
+
+	len_base = ft_strlen(base);
+	if (n >= len_base)
+		convert_base_x(n / len_base, base, len);
+	ft_putchar(base[n % len_base]);
+	*len = *len + 1;
+}
+
+void	convert_base_p(unsigned long int n, int *len)
+{
+	char	*base;
+
+	base = "0123456789abcdef";
+	if (n >= 16)
+		convert_base_p(n / 16, len);
+	ft_putchar(base[n % 16]);
+	*len = *len + 1;
 }

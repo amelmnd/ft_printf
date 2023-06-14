@@ -13,7 +13,7 @@ EXEC = prog
 ORIGIN = main.c
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-SRC = ft_printf.c ft_unsigned_itoa.c ft_printf_utils.c
+SRC = ft_printf.c ft_printf_utils.c ft_libft_utils.c ft_itoa_variant.c
 
 # nommage automatique des fichiers objets .o en fonction des noms de source .c
 OBJ = $(SRC:.c=.o)

@@ -6,7 +6,7 @@
 /*   By: amennad <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 12:09:44 by amennad           #+#    #+#             */
-/*   Updated: 2023/06/13 15:55:15 by amennad          ###   ########.fr       */
+/*   Updated: 2023/06/14 10:46:15 by amennad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,36 +18,16 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-void	test(int i)
-{
-	printf("TRUE : %X\n", i);
-	ft_printf("MY : %X\n", i);
-}
+// void	test(int i)
+// {
+// 	printf("TRUE : %p\n", 0);
+// 	ft_printf("MY : %p\n", 0);
+// }
 
 int	main(void)
 {
-	test(0);
-	test(1);
-	test(10);
-	test(11);
-	test(15);
-	test(16);
-	test(17);
-	test(99);
-	test(100);
-	test(101);
-	test(-1);
-	test(-10);
-	test(-11);
-	test(-15);
-	test(-16);
-	test(-17);
-	test(-99);
-	test(-100);
-	test(-101);
-	test(42);
-	test(-42);
+	printf("TRUE : %%\n");
+	ft_printf("MY : %%\n");
 	return (0);
 }
 //LES DIFFERENTS TESTS REALISES
