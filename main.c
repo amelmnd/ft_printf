@@ -6,7 +6,7 @@
 /*   By: amennad <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 12:09:44 by amennad           #+#    #+#             */
-/*   Updated: 2023/06/14 10:46:15 by amennad          ###   ########.fr       */
+/*   Updated: 2025/03/07 16:03:08 by amennad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,25 @@
 
 int	main(void)
 {
-	printf("TRUE : %%\n");
-	ft_printf("MY : %%\n");
+printf("----NO AFTER----\n");
+	printf("----CAS 1 CHIFFRE ----\n");
+	printf("TRUE : %i\n", 2);
+	ft_printf("MY : %i\n", 2);
+	printf("----CAS 1 CHIFFRE NEG----\n");
+	printf("TRUE : %i\n", -2);
+	ft_printf("MY : %i\n", -2);
+	printf("----CAS +R CHIFFRE----\n");
+	printf("TRUE : %i\n", 85461);
+	ft_printf("MY : %i\n", 85461);
+	printf("----CAS +R CHIFFRE NEG----\n");
+	printf("TRUE : %i\n", -85461);
+	ft_printf("MY : %i\n", -85461);
+	printf("----CAS INT_MAX----\n");
+	printf("TRUE : %i\n", 2147483647);
+	ft_printf("MY : %i\n", 2147483647);
+	printf("----CAS INT_MIN----\n");
+	printf("TRUE : %i\n", -2147483647);
+	ft_printf("MY : %i\n", -2147483647);
 	return (0);
 }
 //LES DIFFERENTS TESTS REALISES

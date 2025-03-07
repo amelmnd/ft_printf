@@ -2,30 +2,28 @@
 ft_printf
 </h1> 
 <p align="center">
-<img src="https://badge42.vercel.app/api/v2/clj4c286d001608ky7gpcs9h7/project/3107050" />
 <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-</p>
-<p align="center">
-<img src="https://img.shields.io/badge/42_Nice-000" />
 </p>
 
 
 
 - [Description](#description)
 - [Structure du projet](#structure-du-projet)
-  * [Fichiers .c](#fichiers-c)
-  * [.h (En-tête)](#h--en-t-te-)
-  * [Makefile](#makefile)
-- [La fonction](#les-fonctions)
-- [Utilisation de ft_printf](#utilisation-de-ft_printf)
-  * [Pre-requis](#pre-requis)
-  * [Utilisation](#utilisation)
+  - [Fichiers .c](#fichiers-c)
+  - [.h (En-tête)](#h-en-tête)
+  - [Makefile](#makefile)
+- [La fonction](#la-fonction)
+- [Utilisation de ft\_printf](#utilisation-de-ft_printf)
+  - [Pre-requis](#pre-requis)
+  - [Compilation](#compilation)
+  - [Utilisation](#utilisation)
 - [Test](#test)
 
 
 ## Description
 
-le but de ce projet est de recoder printf(), pour apprendre à se servir d’un nombre d’arguments variable (notion de fonction variadique).
+Le but de ce projet est de recoder printf(), pour apprendre à se servir d’un nombre d’arguments variable (notion de fonction variadique).
+Ce projet servira de printf utilisable dans tous les projets suivants.
 
 ## Structure du projet
 ### Fichiers .c
@@ -56,6 +54,18 @@ Les différents paramètres possibles de la fonction sont les suivants :
 ### Pre-requis
 
 * **compilateur `gcc`**
+  
+### Compilation
+```shell
+make
+```
+- Création de la fonction pour l'utiliser dans un projet
+
+
+```shell
+make compil
+```
+- Compilation et l'exécution de la fontion pour tester, nécessite un main (présent ici)
 
 ### Utilisation
 
